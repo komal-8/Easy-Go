@@ -1,0 +1,30 @@
+
+<%- include('../partials/header') %>
+
+<div class="login-page" >
+    <div class="form">
+        <form class="register-form" action="/register" method="post">
+            <input type="text" placeholder="username" name="username" />
+            <input type="password" placeholder="password" name="password" />
+            <input type="text" placeholder="email address" name="email" />
+            <!-- <div >
+                <p>want to register as ?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox"  id="seller" name="role" >
+                    <label class="form-check-label" for="seller">Seller</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox"  id="buyer" name="role">
+                    <label class="form-check-label" for="buyer">Buyer</label>
+                </div>
+
+            </div> -->
+            <button>Create Account</button>
+            <p class="message">Already registered? <a href="/login">Log In</a></p>
+        </form>
+      
+    </div>
+  </div>
+
+
+  <%- include('../partials/footer') %>

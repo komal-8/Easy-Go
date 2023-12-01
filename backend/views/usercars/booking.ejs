@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+<%- include('../partials/flash') %>
+
+
+
+<div class="login-page" >
+ 
+    <div class="form" >
+      <form class="login-form" action="/bookcar" method="post">
+        <label for="startingLocation">Starting Location:</label>
+        <input type="text" id="startingLocation" name="startinglocation" required>
+    
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required>
+    
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+    
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+    
+        <button type="submit" >Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+
+<%- include('../partials/footer') %>

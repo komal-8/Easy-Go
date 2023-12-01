@@ -1,0 +1,25 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+<%- include('../partials/flash') %>
+
+<div class="row">
+    <div class="col">
+        <img src="<%=car.img%>" alt="">
+    </div>
+    <div class="col">
+        <h2> <%= car.name %> </h2>
+        <h3 Rs: <%= car.price %> </h3>
+        <h4> <%= car.desc %></h4>
+        
+        <form  action="cars/<%=car._id%>?_method=DELETE" method="POST">
+        <a href="/bookcar" class="btn btn-primary">Book Now</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<%- include('../partials/footer') %>

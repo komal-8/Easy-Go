@@ -1,0 +1,23 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<div class="row">
+    <div class="col">
+        <img src="<%=car.img%>" alt="">
+    </div>
+    <div class="col">
+        <h2> <%= car.name %> </h2>
+        <h3 Rs: <%= car.price %> </h3>
+        <h4> <%= car.desc %></h4>
+        <!-- <button class="btn btn-primary">Book Now</button> -->
+        <a href="/bookcar" class="btn btn-primary">Book Now</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<%- include('../partials/footer') %>

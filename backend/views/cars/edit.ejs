@@ -1,0 +1,33 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<div clss="row m-5">
+    <form action="/cars/<%=car.id%>?_method=PATCH" method="post">
+        
+        <div class="m-3">
+            <label for="name" class="form-label">Name of product</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="name of product" value="<%=car.name%>">
+        </div>
+        <div class="m-3">
+            <label for="image" class="form-label">Image of product</label>
+            <input type="text" class="form-control" name="img" id="image" placeholder="Image url of product" value="<%=car.img%>">
+        </div>
+        <div class="m-3">
+            <label for="Price" class="form-label">Price of product</label>
+            <input type="Number" class="form-control" name="price" id="Price" placeholder="Price of product" value="<%=car.price%>">
+        </div>
+        <div class="m-3">
+            <label for="Description" class="form-label">Description of product</label>
+            <textarea  class="form-control" name="desc" id="Description" placeholder="Description of product"><%=car.desc%></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-sm btn-success m-3">Save changes</button>
+    
+    
+    </form>
+    </div>
+
+
+
+
+<%- include('../partials/footer') %>

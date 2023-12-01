@@ -1,0 +1,31 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<div clss="row m-5">
+<form action="/cars" method="post">
+    
+    <div class="m-3">
+        <label for="name" class="form-label">Vehicle Name :</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="name of Vehicle">
+    </div>
+    <div class="m-3">
+        <label for="image" class="form-label">Image :</label>
+        <input type="text" class="form-control" name="img" id="image" placeholder="Image url of vehicle">
+    </div>
+    <div class="m-3">
+        <label for="Price" class="form-label">Price/km :</label>
+        <input type="Number" class="form-control" name="price" id="Price" placeholder="Price per km ">
+    </div>
+    <div class="m-3">
+        <label for="Description" class="form-label">Description :</label>
+        <textarea  class="form-control" name="desc" id="Description" placeholder="Description of vehicle"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-sm btn-success m-3">ADD PRODUCT</button>
+
+
+</form>
+</div>
+
+
+<%- include('../partials/footer') %>
